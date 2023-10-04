@@ -5,7 +5,7 @@ import GameButtons from "./GameButtons";
 import ChallengeOptions from "./ChallengeOptions";
 
 const GamePage = () => {
-  return <GameProvider>
+  return <GameProvider addLevelMode={false}>
     <GameButtons />
     <GameMap />
     <ChallengeOptions />

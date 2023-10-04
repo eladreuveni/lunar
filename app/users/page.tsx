@@ -12,6 +12,8 @@ const UsersPage = async () => {
     { cache: 'no-store' }
   );
   const users: User[] = await res.json();
+  const res1 = await fetch("/api/challenge")
+  const j = await res1.json();
 
   return (
     <>
